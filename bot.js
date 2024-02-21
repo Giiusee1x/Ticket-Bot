@@ -10,8 +10,7 @@
    
    # MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
    ## FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/FUEHs7RCqz ]
-   ## YT : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
+   ## Contact    [ DISCORD SERVER :  https://discordUCPbAvYWBgnYhliJa1BIrv0A
 */
 
 const { Client, GatewayIntentBits } = require("discord.js");
@@ -68,13 +67,13 @@ client.on('interactionCreate', async interaction => {
     processedInteractions.add(interaction.id); 
 
    
-    if (interaction.customId === 'create_ticket') {
+    if (interaction.customId === 'Crea_Ticket') {
         const ticketChannel = interaction.channel;
         await createTicket(interaction, ticketChannel);
     }
 
    
-    if (interaction.customId === 'close_ticket') {
+    if (interaction.customId === 'Chiudi_Ticket') {
         const ticketChannel = interaction.channel;
         await closeTicket(interaction, ticketChannel);
     }
