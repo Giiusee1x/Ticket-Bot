@@ -26,7 +26,7 @@ module.exports = {
   run: async (client, interaction) => {
     try {
        if (!interaction.member.permissions.has('ADMINISTRATOR')) {
-        return interaction.reply({ content: 'You need to be a server administrator to set up tickets.', ephemeral: true });
+        return interaction.reply({ content: 'Devi essere un amministratore del server per impostare i ticket.', ephemeral: true });
       }
      
       const serverId = interaction.guildId;
